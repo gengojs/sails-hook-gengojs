@@ -1,55 +1,56 @@
-var Sails   = require('sails').Sails,
-    _       = require('lodash'),
-    assert  = require('chai').assert;
-    
- describe('Basic tests ::', function() {
+var Sails = require('sails').Sails,
+  _ = require('lodash'),
+  assert = require('chai').assert;
 
-     // Var to hold a running sails app instance
-     var sails;
+describe('Basic tests ::', function () {
 
-     // Before running any tests, attempt to lift Sails
-     before(function (done) {
+  // Var to hold a running sails app instance
+  var sails;
 
-         // Hook will timeout in 10 seconds
-         this.timeout(11000);
+  // Before running any tests, attempt to lift Sails
+  before(function (done) {
 
-         // Attempt to lift sails
-         Sails().lift({
-           hooks: {
-             // Load the hook
-             "gengo": require('../'),
-             // Skip grunt (unless your hook uses it)
-             "grunt": false
-           },
-           log: {level: "error"}
-         },function (err, _sails) {
-           if (err) return done(err);
-           sails = _sails;
-           return done();
-         });
-     });
-     describe('Gengo exists ::', function(done){
-       if(sails) {
-         assert.isDefined(sails.__);
-         assert.isDefined(sails.__l);
-         assert.isDefined(sails.gengo);
-         return done();
-       }
-     });
-     // After tests are complete, lower Sails
-     after(function (done) {
+    // Hook will timeout in 10 seconds
+    this.timeout(11000);
 
-         // Lower Sails (if it successfully lifted)
-         if (sails) {
-             return sails.lower(done);
-         }
-         // Otherwise just return
-         return done();
-     });
+    // Attempt to lift sails
+    Sails().lift({
+      hooks: {
+        // Load the hook
+        "gengo": require('../'),
+        // Skip grunt (unless your hook uses it)
+        "grunt": false
+      },
+      log: { level: "error" }
+    }, function (err, _sails) {
+      if (err) return done(err);
+      sails = _sails;
+      return done();
+    });
+  });
+  // After tests are complete, lower Sails
+  after(function (done) {
 
-     // Test that Sails can lift with the hook in place
-     it ('sails does not crash', function() {
-         return true;
-     });
+    // Lower Sails (if it successfully lifted)
+    if (sails) {
+      return sails.lower(done);
+    }
+    // Otherwise just return
+    return done();
+  });
 
- });
+  it('gengo.js should exist in sails', function () {
+    if (sails) {
+      assert.isDefined(sails.__);
+      assert.isDefined(sails.__l);
+      assert.isDefined(sails.gengo);
+      return true;
+    }
+  });
+     
+  // Test that Sails can lift with the hook in place
+  it('sails does not crash', function () {
+    return true;
+  });
+
+});

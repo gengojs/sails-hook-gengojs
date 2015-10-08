@@ -1,12 +1,15 @@
 # sails-hook-gengojs
 A Sails hook for gengo.js, the best i18n library for Node.js
 
+[![Build Status](https://travis-ci.org/gengojs/sails-hook-gengojs.svg?branch=master)](https://travis-ci.org/gengojs/sails-hook-gengojs)
+[![npm](https://img.shields.io/npm/dm/sails-hook-gengojs.svg)](https://npmjs.com/package/sails-hook-gengojs)
+
 This hook is the official [gengo.js](https://www.github.com/gengojs/gengojs) for Sails.
 gengo.js is an i18n library designed to be the best for Node and will officially support
-Sails. This hook will (or should) override the default i18n library that is buit in to Sails.
+Sails. This hook will (or should) override the default i18n library that is buit into Sails.
 
 To use, simply copy and paste the options below into the `i18n.js` file under `config/`.
-Once that is done, simply [checkout the example](https://www.github.com/gengojs/gengojs/tree/master/examples) for usage.
+Once that is done, simply [check out the example](https://www.github.com/gengojs/gengojs/tree/master/examples) for usage.
 Expect a sails example to be created soon in that same folder so be watching!
 
 ## i18n.js
@@ -25,6 +28,14 @@ Expect a sails example to be created soon in that same folder so be watching!
  */
 
 module.exports.i18n = {
+  /***************************************************************************
+  *                                                                          *
+  * Override the namespaces used for debugging.															 *
+  * See https://github.com/gengojs/core for documentation.									 *
+  ****************************************************************************/
+  // debug : {
+  //  namespaces:[ 'core', 'parser', 'router', 'api', 'header', 'localize', 'backend' ]
+  //},
   
   /***************************************************************************
   *                                                                          *
@@ -50,6 +61,7 @@ module.exports.i18n = {
   //    */
   //   "localize":"__l"
   // },
+  
   /***************************************************************************
   *                                                                          *
   * Backend Options                                                          *
@@ -75,6 +87,7 @@ module.exports.i18n = {
 	//   */
   //   "cache": true
   // },
+  
   /***************************************************************************
   *                                                                          *
   * Header Options                                                           *
@@ -127,6 +140,7 @@ module.exports.i18n = {
   //      */
   //     "default": "en-US"
   // },
+  
   /***************************************************************************
   *                                                                          *
   * Parser Options                                                           *
@@ -200,6 +214,7 @@ module.exports.i18n = {
   //     "global": "global"
   //   }
   // },
+  
   /******************************************************************************
   *                                                                          		*
   * Router Options                                                           		*
