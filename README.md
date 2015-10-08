@@ -31,7 +31,7 @@ Expect a sails example to be created soon in that same folder so be watching!
 module.exports.i18n = {
   /***************************************************************************
   *                                                                          *
-  * Override the namespaces used for debugging.															 *
+  * Override the namespaces used for debugging.				                       *
   * See https://github.com/gengojs/core for documentation.									 *
   ****************************************************************************/
   // debug : {
@@ -40,7 +40,7 @@ module.exports.i18n = {
   
   /***************************************************************************
   *                                                                          *
-  * Override any default plugins for gengojs.																 *
+  * Override any default plugins for gengojs.															   *
   * See https://github.com/gengojs/core for documentation.									 *
   ****************************************************************************/
   // plugins : {}
@@ -48,7 +48,7 @@ module.exports.i18n = {
   /***************************************************************************
   *                                                                          *
   * API Options                                                              *
-  * See https://github.com/gengojs/plugin-api for documentation.             *                                                                         *
+  * See https://github.com/gengojs/plugin-api for documentation.             *
   ***************************************************************************/
   // api: {
   //     /** 
