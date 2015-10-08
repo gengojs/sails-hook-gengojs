@@ -3,6 +3,7 @@ A Sails hook for gengo.js, the best i18n library for Node.js
 
 [![Build Status](https://travis-ci.org/gengojs/sails-hook-gengojs.svg?branch=master)](https://travis-ci.org/gengojs/sails-hook-gengojs)
 [![npm](https://img.shields.io/npm/dm/sails-hook-gengojs.svg)](https://npmjs.com/package/sails-hook-gengojs)
+[![npm](https://img.shields.io/npm/v/sails-hook-gengojs.svg)](https://npmjs.com/package/sails-hook-gengojs)
 
 This hook is the official [gengo.js](https://www.github.com/gengojs/gengojs) for Sails.
 gengo.js is an i18n library designed to be the best for Node and will officially support
