@@ -6,6 +6,9 @@
   "directories": {
     "test": "test"
   },
+  "sails":{
+    "isHook":true
+  },
   "dependencies": {
     "chai": "^3.3.0",
     "gengojs": "^1.0.0-alpha.2",
