@@ -27,29 +27,28 @@ Expect a sails example to be created soon in that same folder so be watching!
  * For more informationom i18n in Sails, check out:
  * http://sailsjs.org/#!/documentation/concepts/Internationalization
  */
-
 module.exports.i18n = {
-  /***************************************************************************
-  *                                                                          *
-  * Override the namespaces used for debugging.				                       *
-  * See https://github.com/gengojs/core for documentation.		               *
-  ****************************************************************************/
+  /****************************************************************************
+   *                                                                          *
+   * Override the namespaces used for debugging.				              *
+   * See https://github.com/gengojs/core for documentation.		              *
+   ****************************************************************************/
   // debug : {
   //  namespaces:[ 'core', 'parser', 'router', 'api', 'header', 'localize', 'backend' ]
   //},
-  
-  /***************************************************************************
-  *                                                                          *
-  * Override any default plugins for gengojs.															   *
-  * See https://github.com/gengojs/core for documentation.									 *
-  ****************************************************************************/
+
+  /****************************************************************************
+   *                                                                          *
+   * Override any default plugins for gengojs.								  *
+   * See https://github.com/gengojs/core for documentation.					  *
+   ****************************************************************************/
   // plugins : {}
-  
-  /***************************************************************************
-  *                                                                          *
-  * API Options                                                              *
-  * See https://github.com/gengojs/plugin-api for documentation.             *
-  ***************************************************************************/
+
+  /****************************************************************************
+   *                                                                          *
+   * API Options                                                              *
+   * See https://github.com/gengojs/plugin-api for documentation.             *
+   ***************************************************************************/
   // api: {
   //     /** 
   //      * 'global' refers to the api use for i18n your phrases. 
@@ -62,38 +61,38 @@ module.exports.i18n = {
   //    */
   //   "localize":"__l"
   // },
-  
-  /***************************************************************************
-  *                                                                          *
-  * Backend Options                                                          *
-  * See https://github.com/gengojs/plugin-backend for documentation.         *
-  ***************************************************************************/
+
+  /****************************************************************************
+   *                                                                          *
+   * Backend Options                                                          *
+   * See https://github.com/gengojs/plugin-backend for documentation.         *
+   ***************************************************************************/
   // backend: {
-	// 	/**
-	//   * 'directory' refers to the path to your dictionary respect to the
-	//   * root of your sails app.
-	//   */
+  // 	/**
+  //   * 'directory' refers to the path to your dictionary respect to the
+  //   * root of your sails app.
+  //   */
   //   "directory": "/config/locales",
-	// 	/**
-	//   * 'extension' refers to the file extension of your dictionary.
-	//   */
+  // 	/**
+  //   * 'extension' refers to the file extension of your dictionary.
+  //   */
   //   "extension": "json",
-	// 	/**
-	//   * 'prefix' refers to the prefix in your file's name.
-	//   */
+  // 	/**
+  //   * 'prefix' refers to the prefix in your file's name.
+  //   */
   //   "prefix": "",
-	// 	/**
-	//   * 'cache' refers to caching and enables gengo to store the dictionary
-	//   * without changes until the server has been restarted.
-	//   */
+  // 	/**
+  //   * 'cache' refers to caching and enables gengo to store the dictionary
+  //   * without changes until the server has been restarted.
+  //   */
   //   "cache": true
   // },
-  
-  /***************************************************************************
-  *                                                                          *
-  * Header Options                                                           *
-  * See https://github.com/gengojs/plugin-header for documentation.          *
-  ***************************************************************************/
+
+  /****************************************************************************
+   *                                                                          *
+   * Header Options                                                           *
+   * See https://github.com/gengojs/plugin-header for documentation.          *
+   ***************************************************************************/
   // header: {
   //   /**
   //    * 'detect' refers to the detection type. Note that it is best to use up to two
@@ -141,12 +140,12 @@ module.exports.i18n = {
   //      */
   //     "default": "en-US"
   // },
-  
-  /***************************************************************************
-  *                                                                          *
-  * Parser Options                                                           *
-  * See https://github.com/gengojs/plugin-parser for documentation.          *
-  ***************************************************************************/
+
+  /****************************************************************************
+   *                                                                          *
+   * Parser Options                                                           *
+   * See https://github.com/gengojs/plugin-parser for documentation.          *
+   ***************************************************************************/
   // parser : {
   //   /**
   //    * 'type' refers to the type of parser used.
@@ -215,17 +214,17 @@ module.exports.i18n = {
   //     "global": "global"
   //   }
   // },
-  
-  /******************************************************************************
-  *                                                                          		*
-  * Router Options                                                           		*
-  * See https://github.com/gengojs/plugin-router for documentation.             *
-  ******************************************************************************/
+
+  /****************************************************************************
+   *                                                                          *
+   * Router Options                                                           *
+   * See https://github.com/gengojs/plugin-router for documentation.          *
+   ***************************************************************************/
   // router: {
-	// 	/**
-	//   * 'enabled' refers to enabling the special data structure in your dictionary.
-	//   * ( e.g. URL path = '/greet/', Dictionary = { 'index': {'greet': { /* ... */ } } } )
-	//   */
+  // 	/**
+  //   * 'enabled' refers to enabling the special data structure in your dictionary.
+  //   * ( e.g. URL path = '/greet/', Dictionary = { 'index': {'greet': { /* ... */ } } } )
+  //   */
   //   "enabled": false
   // }
 };
