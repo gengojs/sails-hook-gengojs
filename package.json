@@ -1,0 +1,42 @@
+{
+  "name": "sails-hook-gengojs",
+  "version": "1.0.0-alpha.1",
+  "description": "A Sails hook for gengo.js, the best i18n library for Node.js",
+  "main": "index.js",
+  "directories": {
+    "test": "test"
+  },
+  "dependencies": {
+    "chai": "^3.3.0",
+    "gengojs": "^1.0.0-alpha.2",
+    "gengojs-default-pack": "^1.1.1",
+    "lodash": "^3.10.1",
+    "sails": "^0.11.2"
+  },
+  "devDependencies": {
+    "gulp": "^3.9.0",
+    "gulp-spawn-mocha": "^2.2.1"
+  },
+  "scripts": {
+    "test": "gulp"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/gengojs/sails-hook-gengojs.git"
+  },
+  "keywords": [
+    "sails-hook",
+    "sails",
+    "i18n",
+    "gengojs",
+    "l10n",
+    "internationalize",
+    "server"
+  ],
+  "author": "iwatakeshi",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/gengojs/sails-hook-gengojs/issues"
+  },
+  "homepage": "https://github.com/gengojs/sails-hook-gengojs#readme"
+}
