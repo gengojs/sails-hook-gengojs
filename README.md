@@ -2,15 +2,32 @@
 A Sails hook for gengo.js, the best i18n library for Node.js
 
 [![Build Status](https://travis-ci.org/gengojs/sails-hook-gengojs.svg?branch=master)](https://travis-ci.org/gengojs/sails-hook-gengojs)
-[![npm](https://img.shields.io/npm/dm/sails-hook-gengojs.svg)](https://npmjs.com/package/sails-hook-gengojs)
 [![npm](https://img.shields.io/npm/v/sails-hook-gengojs.svg)](https://npmjs.com/package/sails-hook-gengojs)
+
+## Introduction
 
 This hook is the official [gengo.js](https://www.github.com/gengojs/gengojs) for Sails.
 gengo.js is an i18n library designed to be the best for Node and will officially support
-Sails. This hook will (or should) override the default i18n library that is buit into Sails.
+Sails. This hook will override the default i18n library that is built into Sails.
 
-To use, simply copy and paste the options below into the `i18n.js` file under `config/`.
-Once that is done, simply [check out the example](https://www.github.com/gengojs/gengojs/tree/master/examples) for usage.
+## Usage
+
+1. Install the hook with `npm i --save sails-hook-gengojs`
+2. Copy and paste the options below into the `i18n.js` file under `config/`.
+3. Finally, override the default 1i8n hook in `.sailsrc`:
+
+```json
+{
+  "generators": {
+    "modules": {}
+  },
+  "hooks": {
+    "i18n": false
+  }
+}
+```
+
+Once that is done, [check out the example](https://www.github.com/gengojs/gengojs/tree/master/examples) for usage.
 Expect a sails example to be created soon in that same folder so be watching!
 
 ## i18n.js
@@ -30,19 +47,20 @@ Expect a sails example to be created soon in that same folder so be watching!
 module.exports.i18n = {
   /****************************************************************************
    *                                                                          *
-   * Override the namespaces used for debugging.				              *
-   * See https://github.com/gengojs/core for documentation.		              *
+   * Override the namespaces used for debugging.                              *
+   * See https://github.com/gengojs/core for documentation.                   *
    ****************************************************************************/
   // debug : {
+  //  enabled: true,
   //  namespaces:[ 'core', 'parser', 'router', 'api', 'header', 'localize', 'backend' ]
   //},
 
   /****************************************************************************
    *                                                                          *
-   * Override any default plugins for gengojs.								  *
-   * See https://github.com/gengojs/core for documentation.					  *
+   * Override any default plugins for gengojs.                                *
+   * See https://github.com/gengojs/core for documentation.                   *
    ****************************************************************************/
-  // plugins : {}
+  // plugins : {},
 
   /****************************************************************************
    *                                                                          *
@@ -68,20 +86,20 @@ module.exports.i18n = {
    * See https://github.com/gengojs/plugin-backend for documentation.         *
    ***************************************************************************/
   // backend: {
-  // 	/**
+  //  /**
   //   * 'directory' refers to the path to your dictionary respect to the
   //   * root of your sails app.
   //   */
   //   "directory": "/config/locales",
-  // 	/**
+  //  /**
   //   * 'extension' refers to the file extension of your dictionary.
   //   */
   //   "extension": "json",
-  // 	/**
+  //  /**
   //   * 'prefix' refers to the prefix in your file's name.
   //   */
   //   "prefix": "",
-  // 	/**
+  //  /**
   //   * 'cache' refers to caching and enables gengo to store the dictionary
   //   * without changes until the server has been restarted.
   //   */
@@ -221,7 +239,7 @@ module.exports.i18n = {
    * See https://github.com/gengojs/plugin-router for documentation.          *
    ***************************************************************************/
   // router: {
-  // 	/**
+  //  /**
   //   * 'enabled' refers to enabling the special data structure in your dictionary.
   //   * ( e.g. URL path = '/greet/', Dictionary = { 'index': {'greet': { /* ... */ } } } )
   //   */
