@@ -32,7 +32,7 @@ module.exports.i18n = {
   /***************************************************************************
   *                                                                          *
   * Override the namespaces used for debugging.				                       *
-  * See https://github.com/gengojs/core for documentation.									 *
+  * See https://github.com/gengojs/core for documentation.		               *
   ****************************************************************************/
   // debug : {
   //  namespaces:[ 'core', 'parser', 'router', 'api', 'header', 'localize', 'backend' ]
