@@ -18,7 +18,7 @@ Sails. This hook will override the default i18n library that is built into Sails
 
 1. Install the hook with `npm i --save sails-hook-gengojs`
 2. Copy and paste the options below into the `i18n.js` file under `config/`.
-3. Finally, override the default 1i8n hook in `.sailsrc`:
+3. Finally, override the default i18n hook in `.sailsrc`:
 
 ```json
 {
