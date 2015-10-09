@@ -1,7 +1,8 @@
 # sails-hook-gengojs
 
-[![Join the chat at https://gitter.im/gengojs/sails-hook-gengojs](https://badges.gitter.im/Join%20Chat.svg)](https://gitter.im/gengojs/sails-hook-gengojs?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge&utm_content=badge)
 A Sails hook for gengo.js, the best i18n library for Node.js
+
+[![Join the chat at https://gitter.im/gengojs/sails-hook-gengojs](https://badges.gitter.im/Join%20Chat.svg)](https://gitter.im/gengojs/sails-hook-gengojs?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge&utm_content=badge)
 
 [![Build Status](https://travis-ci.org/gengojs/sails-hook-gengojs.svg?branch=master)](https://travis-ci.org/gengojs/sails-hook-gengojs)
 [![npm](https://img.shields.io/npm/v/sails-hook-gengojs.svg)](https://npmjs.com/package/sails-hook-gengojs)
