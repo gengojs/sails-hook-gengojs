@@ -117,8 +117,8 @@ module.exports.i18n = {
    ***************************************************************************/
   // header: {
   //   /**
-  //    * 'detect' refers to the detection type. Note that it is best to use up to two
-  //    * types of detection.
+  //    * 'detect' refers to the detection type. Note that it is best to use one type of detection.
+  //    *  Note: Any PRs will be accepted that may help gengojs-accept detect multiple types.
   //    */
   //     "detect": {
   //       /**
