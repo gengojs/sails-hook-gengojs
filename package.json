@@ -1,6 +1,6 @@
 {
   "name": "sails-hook-gengojs",
-  "version": "1.0.0-alpha.4",
+  "version": "1.0.0-alpha.6",
   "description": "A Sails hook for gengo.js, the best i18n library for Node.js",
   "main": "index.js",
   "directories": {
@@ -10,9 +10,9 @@
     "isHook":true
   },
   "dependencies": {
-    "chai": "^3.3.0",
-    "gengojs": "^1.0.0-alpha.3",
-    "gengojs-default-pack": "^1.1.1",
+    "chai": "^3.4.0",
+    "gengojs": "^1.0.0-alpha.4",
+    "gengojs-default-pack": "^1.1.3",
     "lodash": "^3.10.1",
     "sails": "^0.11.2"
   },
